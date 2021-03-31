@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercice: Créer une page web sur un sujet de notre choix</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Astronomy</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">News</span></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign in <span class="caret"></span>
+                            <ul class="dropdown-menu">
+                                <form class="navbar-form">
+                                    <li><div class="form-group">
+                                        <input type="email" class="form-control" class="form-control" placeholder="Email" name="email">
+                                    </div></li>
+                                    <li><div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Password" name="password">
+                                    </div></li><br>
+                                    <button type="submit" class="btn btn-success">Sign in</button>
+                                </form>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="jumbotron">
+            <video id="video-background" preload muted autoplay loop>
+                <source src="bgd-video.mp4" type="video/mp4">
+            </video>
+            <div class="container">
+                <h2>Embark on a journey of discovery</h2>
+                <h3>Get the latest information from the experts of astronomy</h3><br>
+                <button href="#" class="btn btn-primary btn-lg">Join us</button>
+            </div>
+        </div>
+  
+        <div class="container">
+            <div class="col-md-5">
+                <h1>Astronomy</h1>
+            </div>
+            <div class="col-md-7">
+                <div><p>Your online destination for news articles on planets, cosmology, NASA, space missions, and more. You’ll also find information on how to observe upcoming visible sky events such as meteor showers, solar and lunar eclipses, key planetary appearances, comets, and asteroids.</p></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h4>Check out the latest news...</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="images/article-image1.jpg" alt="Black hole" class="img-thumbnail">
+                    <h5>Could we steal energy from leaking black holes?</h5>
+                    <a href="#" role="button">Read more...</a>
+                </div>
+                <div class="col-md-3"> 
+                    <img src="images/article-image2.jpg" alt="Black hole" class="img-thumbnail">
+                    <h5>How do supermassive black holes grow so large?</h5>
+                    <a href="#" role="button">Read more...</a>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/article-image3.jpg" alt="Earth pole" class="img-thumbnail">
+                    <h5>Space hurricane of plasma spotted above Earth’s North Pole</h5>
+                    <a href="#" role="button">Read more...</a>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/article-image4.png" alt="Earth core" class="img-thumbnail">
+                    <h5>Earth has been hiding a fifth layer in its inner core</h5>
+                    <a href="#" role="button">Read more...</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script>
+            $('.dropdown-menu').on('click', function(e) {
+            e.stopPropagation();
+            });
+        </script>
+    </body>
+</html>
