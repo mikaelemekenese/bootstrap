@@ -8,24 +8,14 @@ body {
 }
 
 .jumbotron{
+    background-image: url(./images/jumbotron-bgd-image.jpg);
+    object-fit: fill;
+    object-position: center;
     position: relative;
     overflow: hidden;
     background-color:black;
     color: white;
     z-index:-101;
-}
-
-.jumbotron video { 
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    object-fit: cover;
-    object-position: center;
-    overflow: hidden;
-    z-index: -100;
-    width:100%;
 }
 
 .jumbotron .container {
@@ -47,6 +37,15 @@ h1 {
     margin: auto;
     text-align: justify;
     margin-bottom: 20px;
+}
+
+body > div:nth-child(4) {
+    background-color: #222;
+    margin: 0;
+}
+
+.container h4 {
+    padding-top: 20px;
 }
 
 .img-thumbnail {
